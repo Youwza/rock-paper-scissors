@@ -23,26 +23,26 @@ namespace rock_paper_scissors
                 Console.WriteLine();
                 int userDraw = UserChoice(input);
                 int opponentDraw = ComputerChoice();
-                if (userDraw == (opponentDraw + 1) || userDraw == (opponentDraw - 2))
+                if (userDraw == opponentDraw)
+                {
+                    Console.WriteLine("\n\tIt's a tie!");
+                    draw++;
+                }
+                else if (userDraw == (opponentDraw + 1) || userDraw == (opponentDraw - 2))
                 {
                     Console.WriteLine("\n\tYou won! \\( '-' )/");
                     wins++;
                 }
-                else if (userDraw == (opponentDraw - 1) || userDraw == (opponentDraw + 2))
+                else
                 {
                     Console.WriteLine("\n\tYou lost! ( ;-; )");
                     loss++;
-                }
-                else
-                {
-                    Console.WriteLine("\n\tIt's a tie!");
-                    draw++;
                 }
                 Console.WriteLine("\nPlay again? Choose [r]ock, [p]aper or [s]cissors...\n");
                 InitRound();
                 input = Console.ReadKey().KeyChar;
             }
-            Console.WriteLine("\tYou won " + wins + " out of " + rounds + " games.");
+            Console.WriteLine("\n\n\tYou won " + wins + " out of " + (wins + loss + draw) + " games.");
             Console.WriteLine("\tYou lost " + loss + " and tied " + draw + " games.");
 
             if (wins > loss)
@@ -63,6 +63,9 @@ namespace rock_paper_scissors
         public static int draw = 0;
         public static int rounds = 0;
 
+        // Draws
+        public static string[] Choice = { "rock", "paper", "scissors" };
+
         // Opponent's turn
         static int ComputerChoice()
         {
@@ -70,16 +73,14 @@ namespace rock_paper_scissors
             int computerDraw = value.Next(0, 3);
             switch (computerDraw)
             {
+                case 0:
+                    break;
                 case 1:
-                    Console.WriteLine("\tYour opponent drew ROCK!");
                     break;
-                case 2:
-                    Console.WriteLine("\tYour opponent drew PAPER!");
-                    break;
-                default: // case 0
-                    Console.WriteLine("\tYour opponent drew SCISSORS!");
+                default: // case 2
                     break;
             }
+            Console.WriteLine("\tYour opponent drew " + Choice[computerDraw].ToUpper() + "!");
             return computerDraw;
         }
 
@@ -91,19 +92,17 @@ namespace rock_paper_scissors
             {
                 case 'r':
                 case 'R':
-                    Console.WriteLine("\tYou drew ROCK!");
-                    userDraw = 1;
+                    userDraw = 0;
                     break;
                 case 'p':
                 case 'P':
-                    Console.WriteLine("\tYou drew PAPER!");
-                    userDraw = 2;
+                    userDraw = 1;
                     break;
                 default:
-                    Console.WriteLine("\tYou drew SCISSORS!");
-                    userDraw = 3;
+                    userDraw = 2;
                     break;
             }
+            Console.WriteLine("\tYou drew " + Choice[userDraw].ToUpper() + "!");
             return userDraw;
         }
 
