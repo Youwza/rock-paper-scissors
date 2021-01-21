@@ -7,6 +7,7 @@ namespace rock_paper_scissors
 
         static void Main(string[] args)
         {
+            PrintInfo();
             Play();
         }
 
@@ -14,13 +15,12 @@ namespace rock_paper_scissors
         static void Play()
         {
             char input;
-            PrintInfo();
             InitRound();
             input = Console.ReadKey().KeyChar;
 
+            // Rerun game until user inputs something else
             while (input == 'r' || input == 'p' || input == 's' || input == 'R' || input == 'P' || input == 'S')
             {
-                Console.WriteLine();
                 int userDraw = UserChoice(input);
                 int opponentDraw = ComputerChoice();
                 if (userDraw == opponentDraw)
@@ -35,7 +35,7 @@ namespace rock_paper_scissors
                 }
                 else
                 {
-                    Console.WriteLine("\n\tYou lost! ( ;-; )");
+                    Console.WriteLine("\n\tYou lost... ( ;-; )");
                     loss++;
                 }
                 Console.WriteLine("\nPlay again? Choose [r]ock, [p]aper or [s]cissors...\n");
@@ -47,14 +47,14 @@ namespace rock_paper_scissors
 
             if (wins > loss)
             {
-                Console.WriteLine("\tWell done!");
+                Console.WriteLine("\tWell done! \\( * - * )/");
             }
             else
             {
                 Console.WriteLine("\tBetter luck next time!");
             }
 
-            Console.WriteLine("\n\tGood bye!");
+            Console.WriteLine("\tGood bye!\n");
         }
 
         // Stats
@@ -102,7 +102,7 @@ namespace rock_paper_scissors
                     userDraw = 2;
                     break;
             }
-            Console.WriteLine("\tYou drew " + Choice[userDraw].ToUpper() + "!");
+            Console.WriteLine("\n\n\tYou drew " + Choice[userDraw].ToUpper() + "!");
             return userDraw;
         }
 
