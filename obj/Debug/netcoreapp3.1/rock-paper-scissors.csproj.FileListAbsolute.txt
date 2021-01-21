@@ -1,0 +1,8 @@
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/bin/Debug/netcoreapp3.1/rock-paper-scissors.dll
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/bin/Debug/netcoreapp3.1/rock-paper-scissors.pdb
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/Debug/netcoreapp3.1/rock-paper-scissors.csprojAssemblyReference.cache
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/Debug/netcoreapp3.1/rock-paper-scissors.AssemblyInfoInputs.cache
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/Debug/netcoreapp3.1/rock-paper-scissors.AssemblyInfo.cs
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/Debug/netcoreapp3.1/rock-paper-scissors.csproj.CoreCompileInputs.cache
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/Debug/netcoreapp3.1/rock-paper-scissors.dll
+/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/Debug/netcoreapp3.1/rock-paper-scissors.pdb

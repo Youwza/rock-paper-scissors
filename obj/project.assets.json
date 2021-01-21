@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/rock-paper-scissors.csproj",
+      "projectUniqueName": "/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/rock-paper-scissors.csproj",
       "projectName": "rock-paper-scissors",
-      "projectPath": "/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/rock-paper-scissors.csproj",
+      "projectPath": "/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/rock-paper-scissors.csproj",
       "packagesPath": "/Users/jenny/.nuget/packages/",
-      "outputPath": "/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/",
+      "outputPath": "/Users/jenny/Dropbox/Projekt/ITA20/C#/Inlämningsuppgift09/rock-paper-scissors/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jenny/.nuget/NuGet/NuGet.Config"
