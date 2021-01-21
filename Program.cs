@@ -4,6 +4,12 @@ namespace rock_paper_scissors
 {
     class Program
     {
+
+        // Stats
+        public static int wins = 0;
+        public static int loss = 0;
+        public static int draw = 0;
+
         static void Main(string[] args)
         {
 
@@ -23,21 +29,35 @@ namespace rock_paper_scissors
                     if (userDraw == (opponentDraw + 1) || userDraw == (opponentDraw - 2))
                     {
                         Console.WriteLine("You won! \\( '-' )/");
+                        wins++;
                     }
                     else if (userDraw == (opponentDraw - 1) || userDraw == (opponentDraw + 2))
                     {
                         Console.WriteLine("You lost! ( ;-; )");
+                        loss++;
                     }
                     else
                     {
                         Console.WriteLine("It's a tie!");
+                        draw++;
                     }
                     Console.WriteLine("\nPlay again? Choose [r]ock, [p]aper or [s]cissors...\n");
                     input = Console.ReadKey().KeyChar;
                     Console.WriteLine();
                 }
-                //Console.WriteLine("You won " + wins + " out of " + (wins + loss + draw) + " times.");
-                Console.WriteLine("Good bye!");
+                Console.WriteLine("You won " + wins + " out of " + (wins + loss + draw) + " games.");
+                Console.WriteLine("You lost " + loss + " and tied " + draw + " games.");
+
+                if (wins > loss)
+                {
+                    Console.WriteLine("Well done!");
+                }
+                else
+                {
+                    Console.WriteLine("Better luck next time!");
+                }
+
+                Console.WriteLine("\nGood bye!");
             }
 
             static int UserChoice(char input)
